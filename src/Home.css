@@ -10,6 +10,7 @@
     text-decoration: none;
     position: relative;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .Menu2 {
@@ -23,6 +24,7 @@
     text-decoration: none;
     position: relative;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .file {
@@ -85,9 +87,63 @@
 }
 
 .swiper-container {
-    width: 1920px;
+    width: 1900px;
     height: 661px;
     margin: 44px 0 43px;
     padding: 294px 23px 293.4px 13.4px;
     object-fit: contain
   }
+
+.title {
+    margin: 51px 74px 29px 140px;
+    font-family: BPGWEB001Caps;
+    font-size: 48px;
+    text-align: left;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.title2 {
+    margin: 56px 140px 37px 141px;
+    font-family: BPGMrgvlovani;
+    font-size: 31px;
+    text-align: right;
+    color: #77be39;
+}
+
+.title3 {
+    font-family: BPGWEB001Caps;
+    font-size: 39px;  
+    color:black;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.sesxi{
+position: relative;
+text-align: center;
+}
+
+.sesxi1 {
+    width: 800px;
+    height: 560px;
+    margin: 28px 16px 108px 120px;
+    border-radius: 20px;
+    flex-basis: 50%;
+    float: left;
+    position: relative;
+    display: flex;
+}
+
+.sesxi2 {
+    width: 800px;
+    height: 560px;
+    margin: 28px 120px 108px 16px;
+    border-radius: 20px;
+    flex-basis: 50%;
+    float: left;
+    position: relative;
+    display: flex;
+}
+
