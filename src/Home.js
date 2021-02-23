@@ -17,6 +17,10 @@ import sesxi1 from './sesxi1.png';
 import sesxi2 from './sesxi2.png';
 import barati1 from './barati1.png';
 import barati2 from './barati2.png';
+import news1 from './news1.png';
+import news2 from './news2.png';
+import news3 from './news3.png';
+import news4 from './news4.png';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -33,6 +37,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default function Home() {
 
     return (
+        // სლაიდერი
         <div>
             <Swiper class="swiper-container"
 
@@ -44,39 +49,46 @@ export default function Home() {
                 <div class="swiper-button-next"></div>
             </Swiper>
 
-            <div>
-                <div>
-                    <h2 className="title">იპოთეკური სესხები</h2>
-                    <Link className="title2">იხილეთ ყველა</Link>
-                </div>
-                
-                
-                <div className="sesxi">
+            {/* იპოთეკური სესხები */}
+
+            <div className="div"><h2 className="title">იპოთეკური სესხები</h2></div>
+            <div className="div2"><Link className="title2">იხილეთ ყველა</Link></div>
+
+
+            <div className="sesxi">
                 <Link><img className="sesxi1" src={sesxi1} /></Link>
-                {/* <div className="title3"><h2>შეიძინე ბინა ისარგებლე სუბსიდიით</h2></div> */}
-                        </div>
+                <div className="title3"><h2>შეიძინე ბინა ისარგებლე სუბსიდიით</h2></div>
+            </div>
 
 
-                <div>
-                    {/* <h2>იპოთეკური სესხი 12%-დან</h2> */}
-                    <Link><img className="sesxi2" src={sesxi2} /></Link>
-                </div>
+            <div className="sesxi">
+                <Link><img className="sesxi2" src={sesxi2} /></Link>
+                <div className="title4"><h2>იპოთეკური სესხი 12%-დან</h2></div>
             </div>
 
 
 
+            {/* პლასტიკური ბარათები */}
+            <div className="div"><h2 className="title">პლასტიკური ბარათები</h2> </div>
+            <div className="div2"> <Link className="title2">იხილეთ ყველა</Link> </div>
 
-            <div>
-                <div><h2 className="title">პლასტიკური ბარათები</h2> </div>
-                <div> <Link className="title2">იხილეთ ყველა</Link> </div>
-                <div>
-                    <Link><img className="sesxi1" src={barati1} /></Link>
-                    <Link><img className="sesxi2" src={barati2} /></Link>
-                </div>
+            <div className="sesxi">
+                <Link><img className="sesxi1" src={barati2} /></Link>
+                <div className="title5"><h2>უნივერსალური ბარათი ყველა შემთხვევისთვის</h2></div>
             </div>
+
+            <div className="sesxi">
+                <Link><img className="sesxi2" src={barati1} /></Link>
+                <div className="title6"><h2>ვიზა ბარათები გახდი სოლიდური</h2></div>
+            </div>
+
+
+
+            {/* სიახლეები */}
+            
+           
 
         </div>
-
-
     )
 }
+
