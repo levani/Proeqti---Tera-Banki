@@ -39,14 +39,19 @@ export default function Home() {
     return (
         // სლაიდერი
         <div>
-            <Swiper class="swiper-container"
+            <Swiper
+                className="swiper-container"
+                slidesPerView={1}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }}
+            >
+                <SwiperSlide><img className="swiper-container" src={slide1} /></SwiperSlide>
+                <SwiperSlide><img className="swiper-container" src={slide2} /></SwiperSlide>
 
-                slidesPerView={1}>
-                <SwiperSlide><img class="swiper-container" src={slide1} /></SwiperSlide>
-                <SwiperSlide><img class="swiper-container" src={slide2} /></SwiperSlide>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
             </Swiper>
 
             {/* იპოთეკური სესხები */}
